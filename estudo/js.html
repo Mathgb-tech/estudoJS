@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Ola,Mundo!
+    </h1>   
+
+    <input type="text" id="nome">
+
+    <input type="color" id="cores">
+
+    <button onclick="document.getElementById('texto').style.color=cores.value">Altere a cor</button>
+
+    <p id="texto">******</p>
+
+    <button onclick="document.getElementById('texto').style.color='blue';">Letra vermelha</button>
+
+    <button onclick="Peganome();">Pega Nome</button>
+
+    <button onclick="document.body.style.backgroundColor='yellow'">Mudar cor</button>
+
+    <button onclick="document.body.style.backgroundColor='white'">Voltar</button>
+
+
+    <select id="corfundo" onchange="corpagina();">
+        <option value="">Selecione a cor</option>
+        <option value="red">Vermelho claro</option>
+        <option value="lightblue">Azul claro</option>
+        <option value="lightgreen">Verde claro</option>
+    </select>
+
+    <script>
+        function corpagina(){
+            let cor = document.getElementById("corfundo").value;
+            document.body.style.backgroundColor=cor;
+        }
+    </script>
+
+
+    <script>
+        
+        const m = document.getElementById("texto");
+
+        function Peganome(){
+            let nomeInput = document.getElementById("nome").value;
+            m.innerHTML = ("Ola "+nomeInput+". "+"Seja Bem-Vindo!");
+        }
+            
+            
+    </script>
+
+
+</body>
+</html>
