@@ -1,0 +1,9 @@
+# Ignorar backups de repositório que foram criados automaticamente
+**/.git_backup/
+*.git_backup/
+
+# Ignorar arquivos temporários do sistema
+*.log
+Thumbs.db
+ehthumbs.db
+Desktop.ini
